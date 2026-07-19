@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .dashboard {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    color: #007bff;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: vertical;
+  }
+  
+  input[type="file"] {
+    width: 100%;
+    padding: 8px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .result-card {
+    text-align: center;
+  }
+  
+  .score-container {
+    margin-top: 20px;
+  }
+  
+  #scoreCircle {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #e8f0fe;
+    border: 6px solid #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #scoreText {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  #feedbackText {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      padding: 15px;
+    }
+  
+    #scoreCircle {
+      width: 100px;
+      height: 100px;
+    }
+  
+    #scoreText {
+      font-size: 24px;
+    }
+  }
+  

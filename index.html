@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ATS Scoreboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>🔍 ATS Scoreboard</h1>
+      <p>Get instant resume-to-job matching feedback</p>
+    </header>
+
+    <section class="card">
+      <form id="atsForm">
+        <div class="form-group">
+          <label for="jd">📄 Job Description</label>
+          <textarea id="jd" placeholder="Paste the job description here..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="resume">📎 Upload Resume (PDF)</label>
+          <input type="file" id="resume" accept=".pdf" required />
+        </div>
+
+        <button type="submit">📊 Get Match Score</button>
+      </form>
+    </section>
+
+    <section id="resultSection" class="card result-card hidden">
+      <h2>✅ Match Result</h2>
+      <div class="score-container">
+        <div id="scoreCircle">
+          <span id="scoreText">0%</span>
+        </div>
+        <p id="feedbackText"></p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
